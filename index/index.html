@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Le jeu du Pierre Papier Ciseaux</title>
+	<meta charset="utf-8">
+	<!--Feuille de style CSS-->
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
+	<script src="../script/jquery.js"></script>
+</head>
+<body>
+	<!--Header du jeu-->
+	<header>
+		<h1>Pierre Papier Ciseaux</h1>
+	</header>
+
+	<!--Tableau des scores-->
+	<div class="scoreboard">
+		<div id="user-label" class="badge">Vous</div>
+		<div id="computer-label" class="badge">Ordi</div>
+		<span id="user-score">0</span>:<span id="computer-score">0</span>
+	</div>
+
+	<!--Message du resultat-->
+	<div class="results">
+		<p>Le papier recouvre la pierre. Vous gagnez!</p>
+	</div>
+
+	<!--Choix-->
+	<div class="choices">
+		<div class="choice" id="pierre">
+			<img src="../img/pierre.png" style="width: 150px; height: 150px;">
+		</div>
+
+		<div class="choice" id="papier">
+			<img src="../img/papier.png" style="width: 150px; height: 150px;">
+		</div>
+
+		<div class="choice" id="ciseaux">
+			<img src="../img/ciseaux.png" style="width: 150px; height: 150px;">
+		</div>
+	</div>
+
+	<!--Message d'action-->
+	<p id="action-message">Faite votre choix.</p>
+</body>
+<script src="../script/main.js"></script>
+</html>
